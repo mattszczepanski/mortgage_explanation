@@ -110,6 +110,8 @@ for col in (col_a, col_b):
 
 ##### Rough idea how forward works
 ```python
+# cat_input = categorical variables into tensor
+# cont_input = continous variables into tensor
 tensor = [embed(cat_input) for embed in self.embed_layers]
 tensor = self.embed_drop(tensor)
 tensor = self.bn(tensor)
