@@ -22,7 +22,7 @@
 
 
 ## Dlaczego Deep Learning
-- Prawie zerowy Feature engineering (informacja powinna się sama "ukazać") (shannon entropia informacji)
+- Prawie zerowy Feature engineering (shannon entropia informacji)
 - Chciałem sprawdzić czy w danych ustrukturyzowanych deep learning się sprawdzi.
 ## Preprocessing
 ### Normalizacja
