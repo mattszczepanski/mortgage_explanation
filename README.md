@@ -107,6 +107,16 @@ for col in (col_a, col_b):
 ## Model który zadziałał
 ![model_arch]
 (200, 200, 400, 800, 800, 1000, 1000, 600, 600, 400, 200, 200, 100, 2)
+
+##### Rough idea how forward works
+```python
+tensor = [embed(cat_input) for embed in self.embed_layers]
+tensor = self.embed_drop(tensor)
+tensor = self.bn(tensor)
+tensor = torch.cat([tensor, cont_input],1)
+tensor = self.linear_layers(tensor)
+return self.sigmoid(tensor) 
+```
 ## Co to Embedding?
 ![embed_viz]
 
